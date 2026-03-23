@@ -1,0 +1,77 @@
+<html lang="es">
+
+<head></head>
+
+<body>
+
+	<script src=https://code.jquery.com/jquery-1.9.1.min.js>
+	</script>
+	<script>
+		window.fwSettings = {
+			'widget_id': 101000008578, 'locale': 'es'
+		};
+		!function () { if ("function" != typeof window.FreshworksWidget) { var n = function () { n.q.push(arguments) }; n.q = [], window.FreshworksWidget = n } }() 
+	</script>
+	<script>
+		var tag = document.createElement("script");
+		function scriptLoad() {
+			tag.src = https://euc-widget.freshworks.com/widgets/101000008578.js;
+			document.getElementsByTagName('head')[0].appendChild(tag);
+		};
+	</script>
+	<script>
+		function openWidget() {
+			FreshworksWidget('open');
+		};
+	</script>
+	<style>
+		@media (min-width: 768px) {
+			#fd_createtkt {
+				color: white;
+				background-color: #03787c;
+				font-weight: 600;
+				padding: 10px 20px;
+				border: none;
+				transition: background 0.55s ease;
+				margin-left: 45%;
+			}
+		}
+
+
+		@media (max-width: 767px) {
+			#fd_createtkt {
+				color: white;
+				background-color: #03787c;
+				font-weight: 600;
+				padding: 10px 20px;
+				border: none;
+				transition: background 0.55s ease;
+				margin-left: 40%;
+			}
+		}
+
+		@media (max-width: 479px) {
+			#fd_createtkt {
+				color: white;
+				background-color: #03787c;
+				font-weight: 600;
+				padding: 10px 20px;
+				border: none;
+				transition: background 0.55s ease;
+				margin-left: 35%;
+			}
+		}
+	</style>
+	<button type="button" id="fd_createtkt">Crear Ticket</button>
+	<script>
+		$(document).ready(function () {
+			scriptLoad()
+			FreshworksWidget('hide', 'launcher');
+			$("#fd_createtkt").click(function () {
+				openWidget();
+			});
+		});
+	</script>
+</body>
+
+</html>
